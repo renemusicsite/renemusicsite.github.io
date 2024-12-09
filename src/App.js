@@ -3,6 +3,7 @@ import React from "react"
 import MailingList from "./components/MailingList.tsx";
 import SocialMediaIcons from "./components/SocialMediaIcons.tsx";
 import VideoFrame from "./components/VideoFrame.tsx";
+import Menu from "./components/Menu.tsx";
 
 function App() {
   const currentYear = new Date().getFullYear();
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header header">
         <img className="banner" src="/BannerText.jpg" alt=""/>
+        <Menu />
       </header>
       <div className="site-content">
         <MailingList />
