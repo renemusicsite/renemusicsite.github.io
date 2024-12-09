@@ -16,11 +16,6 @@
   border-radius: 2px;
 }
 
-.bottom-banner {
-  width: 100%;
-  border-radius: 2px;
-}
-
 .footer {
   position:relative;
   animation: slideUp 1s backwards;
