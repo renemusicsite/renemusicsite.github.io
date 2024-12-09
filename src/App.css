@@ -5,10 +5,41 @@
   height: 100vh;
 }
 
+.header {
+  position:relative;
+  transform: translateY(-100%); /* Start off-screen */
+  animation: slideDown 1s forwards; /* Apply animation */
+}
+
 .banner {
   width: 100%;
-  /* max-width: 1080px; */
   border-radius: 2px;
+}
+
+.bottom-banner {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.footer {
+  position:relative;
+  animation: slideUp 1s backwards;
+}
+
+/* Define the animation */
+@keyframes slideDown {
+  to {
+    transform: translateY(0); /* Start off-screen */
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(100%); /* Off-screen at the bottom */
+  }
+  100% {
+      transform: translateY(0); /* Final position */
+  }
 }
 
 .site-content {

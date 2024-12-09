@@ -9,20 +9,20 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img className="banner" src="/bannertext.jpg" alt=""/>
+      <header className="App-header header">
+        <img className="banner" src="/BannerText.jpg" alt=""/>
       </header>
       <div className="site-content">
         <MailingList />
         <SocialMediaIcons />
         {/* <VideoFrame /> */}
       </div>
-      <footer>
+      <footer className="footer">
         <img className="banner" src="/footertall.jpg" alt=""/>
+        <div className="footer-text">
+          © {currentYear} Rene, Beats & Coffee
+        </div>
       </footer>
-      <div className="footer-text">
-        © {currentYear} Rene, Beats & Coffee
-      </div>
     </div>
   );
 }
