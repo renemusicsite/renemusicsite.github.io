@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header header">
         <img className="banner" src="/BannerText.jpg" alt=""/>
-        <Menu />
+        {/* <Menu /> */}
       </header>
       <div className="site-content">
         <MailingList />
