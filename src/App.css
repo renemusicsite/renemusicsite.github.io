@@ -6,6 +6,11 @@
 }
 
 .header {
+  opacity: 0;
+}
+
+.loaded .header {
+  opacity: 1;
   position:relative;
   transform: translateY(-100%); /* Start off-screen */
   animation: slideDown 1s forwards; /* Apply animation */
@@ -18,6 +23,11 @@
 }
 
 .footer {
+  opacity: 0;
+}
+
+.loaded .footer {
+  opacity: 1;
   position:relative;
   animation: slideUp 1s backwards;
 }

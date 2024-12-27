@@ -13,6 +13,6 @@
 }
 
 .menu-item:hover {
-	transform: scale(1.2);
-	transition: 0.5s;
+	color: #6de1ed;
+	transition: all 0.25s;
 }
