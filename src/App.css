@@ -1,3 +1,17 @@
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #da99ff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+::-webkit-scrollbar {
+  width: 4px; /* Width of the vertical scrollbar */
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -16,20 +30,98 @@
   animation: slideDown 1s forwards; /* Apply animation */
 }
 
+.song-img {
+  width: 40%;
+  cursor: pointer;
+}
+
+.song-container {
+  padding: 30px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+.song-title {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+}
+
+.song-description {
+  font-size: 18px;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100001;
+}
+
+/* Modal content (enlarged image) */
+.modal-content {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button style */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close:hover {
+  color: lightgray;
+}
+
 .banner {
   width: 100%;
   border-radius: 2px;
   max-width: 1280px;
+  min-height: 50%;
+  max-height: 282px;
+  object-fit: cover;
+  object-position: top;
 }
 
-.footer {
-  opacity: 0;
+/* Full-screen background video */
+.video-container {
+  position: fixed; /* Fix the video in place */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide anything outside the container */
+  z-index: -1; /* Make sure the video is behind other content */
 }
 
-.loaded .footer {
-  opacity: 1;
-  position:relative;
-  animation: slideUp 1s backwards;
+/* Video styling */
+.background-video {
+  position: absolute;
+  opacity: 0.1;
+  filter: blur(5px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg); /* Rotate video by 90 degrees */
+  width: 100%; /* Make the video full width */
+  /* height: 100%; Make the video full height */
+  object-fit: cover; /* Make sure the video covers the entire area */
+  min-width: 100vw; /* Ensure it stretches enough horizontally */
+  min-height: 100vh; /* Ensure it stretches enough vertically */
 }
 
 /* Define the animation */
@@ -54,6 +146,7 @@
   align-items: center;
   justify-content: space-around;
   color: white;
+  margin-top: 40px;
   /* flex: 1; */
 }
 
@@ -66,8 +159,6 @@
 
 .footer {
   width: 100%;
-  /* max-width: 1080px; */
-  /* margin-top: 24px; */
   border-radius: 2px;
 }
 
@@ -84,6 +175,18 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .song-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .song-img {
+    cursor: auto;
   }
 }
 

@@ -3,7 +3,7 @@ import "./MailingList.css";
 
 function MailingList() {
   return (
-    <div className="mailing-list-container">
+    <div className="mailing-list-container" id="subscribe">
       <div className="mailing-list-description">
         Subscribe for new music and upcoming show announcements
       </div>
