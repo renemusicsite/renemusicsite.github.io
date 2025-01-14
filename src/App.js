@@ -9,6 +9,7 @@ import SocialMediaIcons from "./components/SocialMediaIcons.tsx";
 
 function App() {
   const currentYear = new Date().getFullYear();
+  const isMobile = window.innerWidth <= 768;
 
   // State to manage modal visibility and image source
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,11 +52,12 @@ function App() {
         {/* <Menu /> */}
       </header>
       <div class="video-container">
+      {!isMobile && 
       <video class="background-video" autoPlay muted loop>
         <source src="/unraveling200pRippleCanvas.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
-    </div>
+      </video>}
+      </div>
       <div className="site-content">
         <div className="song-container">
           <img className="song-img" src ="/unravelingFINAL6.jpg"
