@@ -8,10 +8,8 @@
 	top: 0; /* Aligns it at the top of the screen */
 	right: 0; /* Aligns it to the right of the screen */
 	z-index: 9999; /* Ensures it appears on top of everything else */
-	padding: 10px 20px; /* Optional: Adjusts the padding inside the header */
-	/* position:relative; */
-	transform: translateY(-100%); /* Start off-screen */
-	animation: slideDown 1s forwards; /* Apply animation */
+	padding: 10px 20px;
+	animation: slideDown 1s forwards;
 }
 
 .navigation-items {
@@ -42,6 +40,7 @@
 .navigation-logo {
 	width: 8vw;
 	cursor: pointer;
+	box-sizing: border-box;
 	/* margin-left: 12px; */
 }
 
@@ -51,15 +50,18 @@
 
 /* Define the animation */
 @keyframes slideDown {
-to {
-	transform: translateY(0); /* Start off-screen */
-}
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0); /* Start off-screen */
+	}
 }
 
 @media (max-width: 768px) {
 	.navigation-container {
+		max-width: 100%;
 		width: 100%;
-		display: block;
 		background-color: black;
 		padding: 0;
 	}
@@ -74,6 +76,7 @@ to {
 	} */
 
 	.navigation-logo {
+		max-width: 100vw;
 		width: 100%;
 		cursor: auto;
 	}

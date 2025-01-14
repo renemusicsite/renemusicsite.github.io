@@ -25,7 +25,7 @@ function Navigation() {
           ))}
       </div>
       <div className="site-logo">
-        <img onClick={navigateHome}  className="navigation-logo" src="/BannerText.jpg" alt=""/>
+        <img onClick={navigateHome} className="navigation-logo" src="/BannerText.jpg" alt=""/>
       </div>
     </nav>
   );

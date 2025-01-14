@@ -536,8 +536,10 @@
 	flex-wrap: wrap;
 	margin: 0 auto;
 	opacity: 0;
-	transform: translateX(100%); /* Start from the right */
-	animation: fadeInRight 1s forwards; /* Change duration as needed */
+	/* transform: translateX(100%);
+	animation: fadeInRight 1s forwards; */
+	animation: fadeIn 2s forwards;
+	box-sizing: border-box;
 }
 
 .formkit-form[data-uid="a435b5f158"] .formkit-field,
