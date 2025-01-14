@@ -62,7 +62,7 @@ function App() {
           onClick={() => openModal("/unravelingFINAL6.jpg")}
           />
           <div className="song-title">
-            unraveling out now!
+            unraveling out 1/22!
             <div className="song-description">
               artwork by Rodrigo Pacheco
             </div>
@@ -81,9 +81,9 @@ function App() {
             />
           </div>
         )}
-        <Navigation />
-        <MailingList />
+        <Navigation className="loaded" />
         <SocialMediaIcons />
+        <MailingList />
         {/* <VideoFrame /> */}
       </div>
       <footer className="footer">

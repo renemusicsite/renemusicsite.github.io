@@ -3,11 +3,18 @@ import "./Navigation.css";
 
 function Navigation() {
   const navItems = [
-    { title: 'Home', route: '/' },
-      { title: 'Music', route: '/music' },
-      { title: 'Videos', route: '/video' },
+    // { title: 'Home', route: '/' },
+    //   { title: 'Music', route: '/music' },
+    //   { title: 'Videos', route: '/video' },
       { title: 'Subscribe', route: '#subscribe' },
     ];
+
+  const navigateHome = () => {
+    if(window.innerWidth > 768) {
+      window.location.href = '/';
+    }
+  }
+
   return (
     <nav className="navigation-container">
       <div className="navigation-items">
@@ -18,7 +25,7 @@ function Navigation() {
           ))}
       </div>
       <div className="site-logo">
-      <img className="navigation-logo" src="/BannerText.jpg" alt=""/>
+        <img onClick={navigateHome}  className="navigation-logo" src="/BannerText.jpg" alt=""/>
       </div>
     </nav>
   );

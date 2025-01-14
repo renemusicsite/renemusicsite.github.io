@@ -7,7 +7,7 @@
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+	padding: 20px 0px 20px 0px;
     width: 40%;
 	opacity: 0;
 	animation: fadeIn 1s forwards; /* Change duration as needed */
@@ -36,7 +36,15 @@
 		width: 100%;
 	}
 
-	.icon-title {
-		display: none;
+	.icon {
+		padding: 5px;
 	}
+
+	.icon-title {
+		font-size: 12px;
+	}
+
+	/* .icon-title {
+		display: none;
+	} */
 }
