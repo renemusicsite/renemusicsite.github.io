@@ -17,7 +17,6 @@
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
-	padding: 20px 0px 0px 0px;
     width: 40%;
 	opacity: 0;
 	animation: fadeIn 1s forwards; /* Change duration as needed */
