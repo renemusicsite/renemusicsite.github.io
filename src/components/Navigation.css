@@ -58,7 +58,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
 	.navigation-container {
 		max-width: 100%;
 		width: 100%;

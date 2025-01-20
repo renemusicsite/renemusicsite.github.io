@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navigation from "./components/Navigation.tsx";
 import MailingList from "./components/MailingList.tsx";
 import SocialMediaIcons from "./components/SocialMediaIcons.tsx";
+import StreamingIcons from "./components/StreamingIcons.tsx";
 // import VideoFrame from "./components/VideoFrame.tsx";
 // import Menu from "./components/Menu.tsx";
 
@@ -60,15 +61,21 @@ function App() {
       </div>
       <div className="site-content">
         <div className="song-container">
-          <img className="song-img" src ="/unravelingFINAL6.jpg"
-          onClick={() => openModal("/unravelingFINAL6.jpg")}
-          />
-          <div className="song-title">
-            unraveling out 1/22!
+          <div className="img-container">
+            <img className="song-img" src ="/unravelingFINAL6.jpg"
+            onClick={() => openModal("/unravelingFINAL6.jpg")}
+            />
             <div className="song-description">
               artwork by Rodrigo Pacheco
             </div>
           </div>
+          <div className="song-title">
+            unraveling out now!
+          </div>
+          <div className="song-subtitle">            
+            Listen on your preferred music service
+          </div>
+          <StreamingIcons />
         </div>
         {/* Modal */}
         {isModalOpen && (
@@ -81,11 +88,17 @@ function App() {
               alt="Modal"
               className="modal-content"
             />
+            <div className="modal-subtitle">
+              artwork by Rodrigo Pacheco
+            </div>
           </div>
         )}
         <Navigation className="loaded" />
-        <SocialMediaIcons />
+        <div className="divider">
+          <hr/>
+        </div>
         <MailingList />
+        <SocialMediaIcons />
         {/* <VideoFrame /> */}
       </div>
       <footer className="footer">

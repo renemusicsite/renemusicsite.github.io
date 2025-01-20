@@ -1,0 +1,86 @@
+.streaming-icon-title {
+	font-family: 'Bebas Neue';
+    color: black;
+    font-size: 20px;
+    text-align: center;
+	margin-left: 8px;
+}
+
+.streaming-wrapper {
+	display: flex;
+    flex: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.streaming-icon-container {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	padding: 20px 0px 0px 0px;
+    width: 40%;
+	opacity: 0;
+	animation: fadeIn 1s forwards; /* Change duration as needed */
+}
+
+.streaming-link {
+	color: rgb(71, 156, 255);
+    text-decoration: none;
+    display: flex;
+	justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.listen {
+	font-family: 'Bebas Neue';
+	font-size: 18px;
+	margin-right: 8px;
+	text-align: right;
+}
+
+.icon {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.15s ease-in-out;
+}
+
+.icon-item {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 80%;
+    margin: 10px;
+    margin: 10px auto;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+	transition: all 0.15s ease-in-out;
+  }
+
+.icon-item:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.icon:active svg {
+	color:#6e5080;
+}
+
+.icon:active .streaming-icon-title {
+	color:#6e5080;
+}
+
+@media (max-width: 768px) {
+	.streaming-icon-container {
+		width: 100%;
+	}
+
+	.icon {
+		padding: 5px;
+	}
+
+	/* .icon-title {
+		display: none;
+	} */
+}

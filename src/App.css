@@ -17,8 +17,13 @@
 }
 
 .song-img {
-  width: 40%;
+  width: 100%;
   cursor: pointer;
+}
+
+.img-container {
+  margin: 0 auto;
+  width: 40%;
 }
 
 .song-container {
@@ -32,8 +37,28 @@
   font-size: 30px;
 }
 
+.song-subtitle {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #479cff;
+}
+
 .song-description {
-  font-size: 18px;
+  font-family: 'Bebas Neue';
+  font-size: 12px;
+  text-align: right;
+}
+
+.divider {
+  width: 70%;
+}
+
+hr {
+  display: block;
+  border: 0; /* Remove default border */
+  height: 1px; /* Set the height of the rule */
+  background: linear-gradient(to right, transparent 5%, #ccc 10%, #ccc 90%, transparent 95%);
+  margin: 20px 0; /* Spacing around the rule */
 }
 
 /* Modal styles */
@@ -159,6 +184,13 @@
   animation: fadeIn 1s forwards; /* Change duration as needed */
 }
 
+.modal-subtitle {
+  position: fixed;
+  bottom: 0;
+  font-family: 'Bebas Neue';
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   .site-content {
     margin-top: 180px;
@@ -168,8 +200,12 @@
     width: 100%;
   }
 
-  .song-img {
+  .img-container {
     width: 90%;
+  }
+
+  .song-subtitle {
+    font-size: 24px;
   }
 }
 
