@@ -39,9 +39,9 @@
 
 .navigation-logo {
 	width: 8vw;
+	border-radius: 2px;
 	cursor: pointer;
 	box-sizing: border-box;
-	/* margin-left: 12px; */
 }
 
 /* .mobile-logo {

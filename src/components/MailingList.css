@@ -132,7 +132,7 @@
     background-color: rgb(0, 0, 0); 
     color: rgb(255, 255, 255); 
     border-radius: 4px; 
-    gfont-weight: 400;
+    font-weight: 400;
 }
 
 .formkit-form[data-uid="a435b5f158"] .formkit-button:hover,
