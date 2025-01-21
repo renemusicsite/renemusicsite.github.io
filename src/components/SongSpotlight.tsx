@@ -40,7 +40,7 @@ function SongSpotlight() {
   return (
     <div className="song-container">
       <div className="img-container">
-        <img className="song-img" src ="/unravelingFINAL6.jpg"
+        <img alt="Rene - unraveling" className="song-img" src ="/unravelingFINAL6.jpg"
         onClick={() => openModal("/unravelingFINAL6.jpg")}
         />
         <div className="song-description">
