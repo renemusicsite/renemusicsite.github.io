@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navigation from "./components/Navigation.tsx";
 import MailingList from "./components/MailingList.tsx";
 import SocialMediaIcons from "./components/SocialMediaIcons.tsx";
-import StreamingIcons from "./components/StreamingIcons.tsx";
 import SongSpotlight from "./components/SongSpotlight.tsx";
 // import VideoFrame from "./components/VideoFrame.tsx";
 // import Menu from "./components/Menu.tsx";
@@ -19,9 +18,9 @@ function App() {
         {/* <img onLoad={addAnimation} className="banner" src="/BannerText.jpg" alt=""/> */}
         {/* <Menu /> */}
       </header>
-      <div class="video-container">
+      <div className="video-container">
       {!isMobile && 
-      <video class="background-video" autoPlay muted loop>
+      <video className="background-video" autoPlay muted loop>
         <source src="/unraveling200pRippleCanvas.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>}

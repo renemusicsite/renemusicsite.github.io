@@ -54,22 +54,22 @@ function SongSpotlight() {
         Listen on your preferred music service
       </div>
       <StreamingIcons />
+      {isModalOpen && (
+          <div className="modal" onClick={closeModal}>
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <img
+              src={modalImageSrc}
+              alt="Modal"
+              className="modal-content"
+            />
+            <div className="modal-subtitle">
+              artwork by Rodrigo Pacheco
+            </div>
+          </div>
+        )}
     </div>
-        // {isModalOpen && (
-        //   <div className="modal" onClick={closeModal}>
-        //     <span className="close" onClick={closeModal}>
-        //       &times;
-        //     </span>
-        //     <img
-        //       src={modalImageSrc}
-        //       alt="Modal"
-        //       className="modal-content"
-        //     />
-        //     <div className="modal-subtitle">
-        //       artwork by Rodrigo Pacheco
-        //     </div>
-        //   </div>
-        // )}
     );
   }
 
