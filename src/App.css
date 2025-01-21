@@ -199,14 +199,6 @@ hr {
   .banner {
     width: 100%;
   }
-
-  .img-container {
-    width: 90%;
-  }
-
-  .song-subtitle {
-    font-size: 24px;
-  }
 }
 
 @media (max-width: 1023px) {

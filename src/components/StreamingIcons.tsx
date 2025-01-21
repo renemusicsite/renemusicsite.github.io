@@ -19,7 +19,7 @@ function StreamingIcons() {
             <div className="icon">
               <FontAwesomeIcon icon={icon} size="3x" className="fa-icon" />
             </div>
-              <div className="streaming-icon-title">{title}</div>
+            <div className="streaming-icon-title">{title}</div>
             <div className="listen">Listen</div>
           </a>
         </div>
@@ -32,7 +32,7 @@ function StreamingIcons() {
             </svg>
             </div>
             <div className="streaming-icon-title">Tidal</div>
-            Listen
+            <div className="listen">Listen</div>
           </a>
         </div>
         {/* <div className="icon">
