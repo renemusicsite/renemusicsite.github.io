@@ -160,6 +160,10 @@ hr {
   .banner {
     width: 100%;
   }
+
+  .divider {
+    width: 90%;
+  }
 }
 
 .App-header {
