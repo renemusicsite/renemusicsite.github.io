@@ -12,6 +12,13 @@ function App() {
   const currentYear = new Date().getFullYear();
   const isMobile = window.innerWidth <= 768;
 
+  React.useEffect(() => {
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/renemusicart.matomo.cloud/container_9l9LxAMZ.js'; s.parentNode.insertBefore(g,s);
+   }, [])
+
   return (
     <div className="App">
       <header className="App-header header">
@@ -21,7 +28,7 @@ function App() {
       <div className="video-container">
       {!isMobile && 
       <video className="background-video" autoPlay muted loop>
-        <source src="/unraveling200pRippleCanvas.mp4" type="video/mp4" />
+        <source src="/PerfectDarkCanvas.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>}
       </div>

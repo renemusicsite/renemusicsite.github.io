@@ -1,6 +1,7 @@
 .song-img {
 	width: 100%;
-	cursor: pointer;
+	/* cursor: pointer; */
+	border-radius: 2px;
 }
   
   .img-container {

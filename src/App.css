@@ -91,11 +91,11 @@ hr {
 /* Video styling */
 .background-video {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.3;
   filter: blur(5px);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg); /* Rotate video by 90 degrees */
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%) rotate(90deg); */
   width: 100%; /* Make the video full width */
   /* height: 100%; Make the video full height */
   object-fit: cover; /* Make sure the video covers the entire area */

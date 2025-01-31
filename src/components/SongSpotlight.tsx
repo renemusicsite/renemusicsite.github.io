@@ -40,21 +40,18 @@ function SongSpotlight() {
   return (
     <div className="song-container">
       <div className="img-container">
-        <img alt="Rene - unraveling" className="song-img" src ="/unravelingFINAL6.jpg"
-        onClick={() => openModal("/unravelingFINAL6.jpg")}
+        <img alt="Rene - unraveling" className="song-img" src ="/PerfectDark.jpg"
+        onClick={() => openModal("/PerfectDark.jpg")}
         />
-        <div className="song-description">
-          artwork by Rodrigo Pacheco
-        </div>
       </div>
       <div className="song-title">
-        Rene - unraveling
+        Rene - PerfectDark
       </div>
       <div className="song-subtitle">            
         Listen on your preferred music service
       </div>
       <StreamingIcons />
-      {isModalOpen && (
+      {/* {isModalOpen && (
           <div className="modal" onClick={closeModal}>
             <span className="close" onClick={closeModal}>
               &times;
@@ -68,7 +65,7 @@ function SongSpotlight() {
               artwork by Rodrigo Pacheco
             </div>
           </div>
-        )}
+        )} */}
     </div>
     );
   }
