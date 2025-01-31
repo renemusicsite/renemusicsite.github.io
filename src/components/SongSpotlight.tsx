@@ -39,11 +39,15 @@ function SongSpotlight() {
 
   return (
     <div className="song-container">
-      <div className="img-container">
+      {/* <div className="img-container">
         <img alt="Rene - unraveling" className="song-img" src ="/PerfectDark.jpg"
         onClick={() => openModal("/PerfectDark.jpg")}
         />
-      </div>
+      </div> */}
+      <video className="video-thumb-container" autoPlay muted loop>
+        <source src="/PerfectDarkSquareVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="song-title">
         Rene - PerfectDark
       </div>
