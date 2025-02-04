@@ -11,18 +11,22 @@
 
 .video-thumb-container {
 	margin: 0 auto;
-	width: 60%;
+	width: 40%;
+	border: solid .2px;
+    border-color: #ffffff5c;
+    margin-bottom: 8px;
 }
   
 .song-container {
-	padding: 30px 30px 0px 30px;
+	padding: 30px 30px 0;
 	opacity: 0;
 	animation: fadeIn 2s forwards;
+	width: 100%;
 }
   
   .song-title {
 	font-family: 'Bebas Neue';
-	font-size: 30px;
+	font-size: 36px;
 }
   
   .song-subtitle {
@@ -53,6 +57,16 @@
 @media (max-width: 768px) {
 	.img-container {
 	  width: 90%;
+	}
+
+	.video-thumb-container {
+		width: 90%;
+	}
+
+	.song-container {
+		padding: 0;
+		padding-top: 30px;
+		width: 90%;
 	}
   
 	.song-subtitle {

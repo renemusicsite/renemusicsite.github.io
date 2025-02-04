@@ -44,8 +44,8 @@ function SongSpotlight() {
         onClick={() => openModal("/PerfectDark.jpg")}
         />
       </div> */}
-      <video className="video-thumb-container" autoPlay muted loop>
-        <source src="/PerfectDarkSquareVideo.mp4" type="video/mp4" />
+      <video className="video-thumb-container" aria-label="Artwork for PerfectDark" autoPlay muted loop playsInline>
+        <source src="/PerfectDarkSquareVideo.mp4" type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
       <div className="song-title">

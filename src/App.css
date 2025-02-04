@@ -95,12 +95,20 @@ hr {
   filter: blur(5px);
   top: 0%;
   left: 0%;
-  /* transform: translate(-50%, -50%) rotate(90deg); */
   width: 100%; /* Make the video full width */
-  /* height: 100%; Make the video full height */
   object-fit: cover; /* Make sure the video covers the entire area */
   min-width: 100vw; /* Ensure it stretches enough horizontally */
   min-height: 100vh; /* Ensure it stretches enough vertically */
+}
+
+.background-image {
+  position: absolute;
+  opacity: 0.3;
+  filter: blur(20px);
+  top: 0%;
+  left: 0%;
+  width: 100%; /* Make the video full width */
+  object-fit: cover; /* Make sure the video covers the entire area */
 }
 
 /* Define the animation */

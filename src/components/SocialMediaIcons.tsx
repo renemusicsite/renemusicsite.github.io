@@ -16,7 +16,7 @@ function SocialMediaIcons() {
     <div className="icon-container">
       {icons.map(({ icon, title, link }) => (
         <div className="icon"  key={title}>
-            <a href={link} target="_blank" rel="noopener noreferrer" style={styles.icon} key={title}>
+            <a href={link} target="_blank" rel="noopener noreferrer" style={styles.icon} key={title} aria-label={`Follow Rene on ${title}`}>
             <FontAwesomeIcon icon={icon} size="2x" className="fa-icon" />
             <div className="icon-title">{title}</div>
             </a>
