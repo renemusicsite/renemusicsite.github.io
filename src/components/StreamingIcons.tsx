@@ -5,9 +5,9 @@ import "./StreamingIcons.css";
 
 function StreamingIcons() {
   const icons = [
-    { icon: faSpotify, title: 'Spotify', link: 'https://open.spotify.com/track/6sZFziOX3czLINf7FrQMCt?si=9116bdbd2b80402e' },
-    { icon: faItunesNote, title: 'Apple Music', link: 'https://music.apple.com/us/album/unraveling-single/1788722071' },
-    { icon: faBandcamp, title: 'Bandcamp', link: 'https://rene.bandcamp.com/track/unraveling' },
+    { icon: faSpotify, title: 'Spotify', link: 'https://open.spotify.com/track/6nYLzE7OOmwtGvrojUwf56?si=8fad3e3ae0604699' },
+    { icon: faItunesNote, title: 'Apple Music', link: 'https://music.apple.com/us/album/perfectdark-single/1789980707' },
+    { icon: faBandcamp, title: 'Bandcamp', link: 'https://rene.bandcamp.com/track/perfectdark' },
     ];
   return (
     <div className="streaming-wrapper">
