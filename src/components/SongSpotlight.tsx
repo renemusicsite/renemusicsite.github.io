@@ -39,17 +39,17 @@ function SongSpotlight() {
 
   return (
     <div className="song-container">
-      {/* <div className="img-container">
-        <img alt="Rene - unraveling" className="song-img" src ="/PerfectDark.jpg"
-        onClick={() => openModal("/PerfectDark.jpg")}
+      <div className="img-container">
+        <img alt="Rene - unraveling" className="song-img" src ="/CloudhoppingFinal.jpg"
+        onClick={() => openModal("/CloudhoppingFinal.jpg")}
         />
-      </div> */}
-      <video className="video-thumb-container" aria-label="Artwork for PerfectDark" autoPlay muted loop playsInline>
+      </div>
+      {/* <video className="video-thumb-container" aria-label="Artwork for PerfectDark" autoPlay muted loop playsInline>
         <source src="/PerfectDarkSquareVideo.mp4" type="video/mp4"/>
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div className="song-title">
-        Rene - PerfectDark
+        Rene - cloudhopping
       </div>
       <div className="song-subtitle">            
         Listen on your preferred music service

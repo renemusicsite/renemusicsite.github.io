@@ -30,7 +30,7 @@ function StreamingIcons() {
 
 const styles = {
   icon: {
-    color: 'black',
+    color: '#479cff',
     textDecoration: 'none',
   },
 };

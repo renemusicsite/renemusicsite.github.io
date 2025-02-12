@@ -27,13 +27,13 @@ function App() {
       </header>
       <div className="video-container">
       {
-        !isMobile ? 
-          (<video className="background-video" autoPlay muted loop>
-            <source src="/PerfectDarkSquareVideo.mp4" type="video/mp4" />
+        // !isMobile ? 
+          (<video className="background-video" autoPlay muted loop playsInline>
+            <source src="/CloudHoppingCanvas.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>)
-        : 
-          (<img className="background-image"  src="/PerfectDark.jpg"/>)
+        // : 
+        //   (<img className="background-image"  src="/CloudHoppingFinal.jpg"/>)
       }
       </div>
       <div className="site-content">
