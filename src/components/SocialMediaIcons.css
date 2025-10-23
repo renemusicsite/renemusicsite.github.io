@@ -1,6 +1,6 @@
 .icon-title {
 	font-family: 'Bebas Neue';
-	color: #6de1ed;
+	color: var(--color-text-accent);
 }
 
 .icon-container {

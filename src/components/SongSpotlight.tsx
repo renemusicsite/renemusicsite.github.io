@@ -9,6 +9,7 @@ function SongSpotlight() {
 
   // Handler to open the modal with the clicked image source
   const openModal = (src) => {
+    console.log('modal clicked');
     if(window.innerWidth >= 1024) {
       setModalImageSrc(src); // Set the modal image source
       setIsModalOpen(true);   // Show the modal
@@ -21,27 +22,27 @@ function SongSpotlight() {
   };
 
     // Adding event listener for the Escape key to close the modal
-    useEffect(() => {
-      const handleKeydown = (event) => {
-        if (event.key === 'Escape') {
-          closeModal();
-        }
-      };
+    // useEffect(() => {
+    //   const handleKeydown = (event) => {
+    //     if (event.key === 'Escape') {
+    //       closeModal();
+    //     }
+    //   };
   
-      // Add the event listener when the component mounts
-      window.addEventListener('keydown', handleKeydown);
+    //   // Add the event listener when the component mounts
+    //   window.addEventListener('keydown', handleKeydown);
   
-      // Cleanup the event listener on unmount
-      return () => {
-        window.removeEventListener('keydown', handleKeydown);
-      };
-    }, []);
+    //   // Cleanup the event listener on unmount
+    //   return () => {
+    //     window.removeEventListener('keydown', handleKeydown);
+    //   };
+    // }, []);
 
   return (
     <div className="song-container">
       <div className="img-container">
-        <img alt="Rene - unraveling" className="song-img" src ="/CloudhoppingFinal.jpg"
-        onClick={() => openModal("/CloudhoppingFinal.jpg")}
+        <img alt="Rene - don't have much to say" className="song-img" src ="/notmuchart.jpg"
+        // onClick={() => openModal("/notmuchart.jpg")}
         />
       </div>
       {/* <video className="video-thumb-container" aria-label="Artwork for PerfectDark" autoPlay muted loop playsInline>
@@ -49,12 +50,12 @@ function SongSpotlight() {
         Your browser does not support the video tag.
       </video> */}
       <div className="song-title">
-        Rene - cloudhopping
+        Rene - don't have much to say
       </div>
       <div className="song-subtitle">            
-        Listen on your preferred music service
+        Friday October 24th
       </div>
-      <StreamingIcons />
+      {/* <StreamingIcons /> */}
       {/* {isModalOpen && (
           <div className="modal" onClick={closeModal}>
             <span className="close" onClick={closeModal}>

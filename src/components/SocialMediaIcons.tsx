@@ -28,7 +28,7 @@ function SocialMediaIcons() {
 
 const styles = {
   icon: {
-    color: '#6de1ed', // Change color as needed
+    color: 'var(--color-text-accent)', // Change color as needed
     textDecoration: 'none',
   },
 };

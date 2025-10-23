@@ -28,7 +28,7 @@ function App() {
       {
         // !isMobile ? 
           (<video className="background-video" autoPlay muted loop playsInline>
-            <source src="/CloudHoppingCanvas.mp4" type="video/mp4" />
+            <source src="/CandleLoopWebsite.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>)
         // : 

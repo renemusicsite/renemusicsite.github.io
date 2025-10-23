@@ -32,7 +32,7 @@
   .song-subtitle {
 	font-family: 'Bebas Neue';
 	font-size: 30px;
-	color: #479cff;
+	color: var(--color-text-accent);
 }
   
   .song-description {
@@ -55,6 +55,10 @@
 }
 
 @media (max-width: 768px) {
+	.song-title {
+		font-size: 30px;
+	}
+	
 	.img-container {
 	  width: 90%;
 	}

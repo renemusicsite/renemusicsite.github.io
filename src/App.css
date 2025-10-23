@@ -1,3 +1,8 @@
+:root {
+  --color-text: white;
+  --color-text-accent: #ffe09a;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -75,6 +80,7 @@ hr {
   max-height: 282px;
   object-fit: cover;
   object-position: top;
+  filter: saturate(0%);
 }
 
 /* Full-screen background video */
@@ -89,16 +95,18 @@ hr {
 }
 
 /* Video styling */
+
 .background-video {
-  position: absolute;
-  opacity: 0.3;
-  filter: blur(5px);
-  top: 0%;
-  left: 0%;
-  width: 100%; /* Make the video full width */
-  object-fit: cover; /* Make sure the video covers the entire area */
-  min-width: 100vw; /* Ensure it stretches enough horizontally */
-  min-height: 100vh; /* Ensure it stretches enough vertically */
+    position: absolute;
+    opacity: 0.3;
+    filter: blur(25px);
+    top: -68%;
+    left: -35%;
+    width: 100%;
+    object-fit: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    scale: 1;
 }
 
 .background-image {
@@ -132,7 +140,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: var(--color-text);
   margin-top: 40px;
   /* flex: 1; */
 }
@@ -172,6 +180,21 @@ hr {
   .divider {
     width: 90%;
   }
+
+
+  .background-video {
+    position: absolute;
+    opacity: 0.3;
+    filter: blur(5px);
+    top: 0%;
+    left: 0%;
+    width: 100%; /* Make the video full width */
+    object-fit: cover; /* Make sure the video covers the entire area */
+    min-width: 100vw; /* Ensure it stretches enough horizontally */
+    min-height: 100vh; /* Ensure it stretches enough vertically */
+    scale: 1.25;
+  }
+
 }
 
 .App-header {
