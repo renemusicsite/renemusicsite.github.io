@@ -53,9 +53,9 @@ function SongSpotlight() {
         Rene - don't have much to say
       </div>
       <div className="song-subtitle">            
-        Friday October 24th
+        Listen on your preferred music service
       </div>
-      {/* <StreamingIcons /> */}
+      <StreamingIcons />
       {/* {isModalOpen && (
           <div className="modal" onClick={closeModal}>
             <span className="close" onClick={closeModal}>

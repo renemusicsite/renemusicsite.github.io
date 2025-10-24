@@ -5,9 +5,9 @@ import "./StreamingIcons.css";
 
 function StreamingIcons() {
   const icons = [
-    { icon: faSpotify, title: 'Spotify', link: 'https://open.spotify.com/track/2zIoaOeAwmFoAU1vgi2fdb?si=dde92aafbb794d1e' },
-    { icon: faItunesNote, title: 'Apple Music', link: 'https://music.apple.com/us/album/cloudhopping-single/1794246635' },
-    { icon: faBandcamp, title: 'Bandcamp', link: 'https://rene.bandcamp.com/track/cloudhopping' },
+    { icon: faBandcamp, title: 'Bandcamp', link: 'https://rene.bandcamp.com/track/dont-know-what-to-say' },
+    { icon: faSpotify, title: 'Spotify', link: 'https://open.spotify.com/track/2Cq0hIK2qPUnBCHYIfrYtr?si=489c517f12cb4798' },
+    { icon: faItunesNote, title: 'Apple Music', link: 'https://music.apple.com/us/album/dont-have-much-to-say-single/1848246701' },
     ];
   return (
     <div className="streaming-wrapper">
